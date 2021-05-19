@@ -14,7 +14,7 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image> </Image>
       <Title />
       <Author />
@@ -36,6 +36,11 @@ const Image = () => (
 );
 
 const Title = () => <h1>I love you to the Moon and Back</h1>;
-const Author = () => <h2> Amelia ...</h2>;
+const Author = () => (
+  // this is how we add styling using javaScript
+  <h2 style={{ color: "#617d98", fontSize: "4rem", marginTop: "0.25rem" }}>
+    Amelia ...
+  </h2>
+);
 
 ReactDom.render(<BookList />, document.getElementById("root"));
