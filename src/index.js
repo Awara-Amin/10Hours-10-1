@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+// adding CSS file
+import "./index.css";
+
 function BookList() {
   return (
-    <section>
+    <section className="booklist">
       <Book />
     </section>
   );
@@ -33,6 +36,6 @@ const Image = () => (
 );
 
 const Title = () => <h1>I love you to the Moon and Back</h1>;
-const Author = () => <h1> Amelia ...</h1>;
+const Author = () => <h2> Amelia ...</h2>;
 
 ReactDom.render(<BookList />, document.getElementById("root"));
